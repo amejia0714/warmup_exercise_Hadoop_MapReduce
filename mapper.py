@@ -7,7 +7,7 @@ for line in sys.stdin:
     line = line.strip()
     line = line.split(",")
 
-    if len(line) >=4:
+    if len(line) >=4 and Cause == "Diabetes": 
         cause = line[1]
         state = line[2]
         deaths = line[3]
